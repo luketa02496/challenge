@@ -1,5 +1,16 @@
-export default function App(){
-  return(
-    <h1>App</h1>
+import { Outlet } from "react-router-dom"
+import Cabecalho from "./components/Cabecalho/Cabecalho"
+import Rodape from "./components/Rodape/Rodape"
+import './components/css/cliente-style.css'
+import './components/css/index-style.css'
+
+
+export default function App() {
+  return (
+    <>
+      <Cabecalho />
+      <Outlet />
+      <Rodape />
+    </>
   )
 }
